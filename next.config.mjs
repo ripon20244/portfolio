@@ -4,7 +4,6 @@ const nextConfig = {
       config.externals.push('pino-pretty', 'lokijs', 'encoding')
       return config
     },
-    // output:"export",
     distDir: 'build',
     trailingSlash: true,
     httpAgentOptions: { keepAlive: true },
@@ -19,7 +18,7 @@ const nextConfig = {
 
     compiler: {
       removeConsole: {
-        // exclude: ["error"],
+        exclude: ["error"],
       },
     },
   
